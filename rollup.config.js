@@ -10,7 +10,7 @@ import { builtinModules } from 'module';
 import { dependencies } from './package.json';
 
 const usePreferConst = true; // Use "const" instead of "var"
-const usePreserveModules = false; // Combine everything is a single file
+const usePreserveModules = true; // `true` -> keep modules structure, `false` -> combine everything into a single file
 const useStrict = true; // Use "strict"
 const useThrowOnError = true; // On error throw and exception
 const useSourceMap = true; // Generate source map files
