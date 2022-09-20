@@ -3,3 +3,4 @@
 
 # Keep these files/directories
 !/dist
+!/src
