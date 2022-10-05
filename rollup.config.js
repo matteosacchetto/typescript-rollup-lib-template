@@ -4,6 +4,7 @@ import eslint from '@rollup/plugin-eslint';
 import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 import esbuild from 'rollup-plugin-esbuild';
+import { typescriptPaths } from 'rollup-plugin-typescript-paths';
 
 // Import dependencies
 import { builtinModules } from 'module';
@@ -39,6 +40,9 @@ export default [
       json({
         preferConst: usePreferConst,
       }),
+      typescriptPaths({
+        preserveExtensions: true,
+      }),
       dts(),
     ],
   },
@@ -64,6 +68,11 @@ export default [
       json({
         preferConst: usePreferConst,
       }),
+      useEsbuild
+        ? typescriptPaths({
+            preserveExtensions: true,
+          })
+        : undefined,
       useEsbuild
         ? esbuild()
         : typescript({
@@ -93,6 +102,11 @@ export default [
       json({
         preferConst: usePreferConst,
       }),
+      useEsbuild
+        ? typescriptPaths({
+            preserveExtensions: true,
+          })
+        : undefined,
       useEsbuild
         ? esbuild()
         : typescript({
