@@ -58,7 +58,7 @@ export default [
       preferConst: usePreferConst,
       preserveModules: usePreserveModules,
       strict: useStrict,
-      entryFileNames: '[name].js',
+      entryFileNames: '[name].cjs',
       sourcemap: useSourceMap,
     },
     plugins: [
@@ -92,7 +92,7 @@ export default [
       preferConst: usePreferConst,
       preserveModules: usePreserveModules,
       strict: useStrict,
-      entryFileNames: '[name].js',
+      entryFileNames: '[name].mjs',
       sourcemap: useSourceMap,
     },
     plugins: [
