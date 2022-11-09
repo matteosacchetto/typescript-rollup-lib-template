@@ -36,7 +36,7 @@
     "prettier": "^2.7.1",
     "rollup": "^3.2.5",
     "rollup-plugin-dts": "^5.0.0",
-    "rollup-plugin-esbuild": "^4.10.2",
+    "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-node-externals": "^5.0.2",
     "rollup-plugin-typescript-paths": "^1.4.0",
     "ts-jest": "^29.0.3",
